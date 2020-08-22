@@ -29,7 +29,7 @@ class BaseService {
     }
 
     async create(entity) {
-        return await this.repository.create();
+        return await this.repository.create(entity);
     }
 
     async update(id, entity) {
